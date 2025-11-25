@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>De10Magique</title>
+    <title>Magic 10-Sided Die</title>
 
     <style>
         body {
@@ -79,7 +79,7 @@
             background: #ffcc33;
         }
 
-        /* 📱 Mode mobile */
+        /* 📱 Mobile mode */
         @media (max-width: 600px) {
 
             body {
@@ -115,11 +115,11 @@
 </head>
 <body>
 
-    <h1>Dé à 10 Faces Magique</h1>
+    <h1>Magic 10-Sided Die</h1>
 
     <div id="de">🎲</div>
     <div id="resultat"></div>
-    <button id="lancer">Lancer le dé</button>
+    <button id="lancer">Roll the die</button>
 
     <script>
         const faces = [1,2,3,4,5,6,7,8,9,10];
@@ -149,7 +149,7 @@
                         resultatDiv.classList.add("action");
                         resultatDiv.classList.remove("echec");
                     } else {
-                        resultatDiv.textContent = "Échec";
+                        resultatDiv.textContent = "Fail";
                         de.classList.remove("action");
                         resultatDiv.classList.add("echec");
                         resultatDiv.classList.remove("action");
